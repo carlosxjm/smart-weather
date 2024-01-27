@@ -1,0 +1,11 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.page-wrapper main {
+  flex-grow: 1;
+  padding-top: 4rem;
+}

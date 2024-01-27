@@ -1,0 +1,65 @@
+.main-header {
+  padding: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.main-header > .container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main-header > .container > .logo-wrapper {
+  width: 25%;
+}
+
+.main-header > .container > .search-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  order: 1;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.main-header > .container > .logo {
+  width: 150px;
+}
+
+.main-header > .container > .button-wrapper > button {
+  background-color: #2e38b3cc;
+  width: 48px;
+  height: 48px;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.header-border {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+  .main-header > .container > .button-wrapper {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-header > .container > .search-wrapper {
+    padding: 0;
+    width: auto;
+  }
+
+  .main-header > .container > .button-wrapper,
+  .main-header > .container > .logo-wrapper {
+    order: 1;
+  }
+}

@@ -1,0 +1,11 @@
+.forecast-list-title {
+  margin-bottom: 2rem;
+}
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 0.5rem;
+  padding-bottom: 20px;
+}
