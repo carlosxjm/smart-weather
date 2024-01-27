@@ -28,21 +28,21 @@ export const MainHeader = () => {
       <header className="main-header">
         <div className="container">
           <div className="logo-wrapper">
-            <img src="/logo.png" alt="SmartWeather" className="logo" />
+            <img src="logo.png" alt="SmartWeather" className="logo" />
           </div>
           <div className="search-wrapper">
             <CitySelect />
           </div>
           <div className="button-wrapper">
             <button onClick={handleToggleSettings} aria-label="Toggle Settings">
-              <img src="/engine.svg" alt="Settings Icon" />
+              <img src="engine.svg" alt="Settings Icon" />
             </button>
             {showSettings && <SettingsOptions />}
           </div>
         </div>
       </header>
       <img
-        src="/degrade-border.svg"
+        src="degrade-border.svg"
         aria-hidden="true"
         className="header-border"
       />

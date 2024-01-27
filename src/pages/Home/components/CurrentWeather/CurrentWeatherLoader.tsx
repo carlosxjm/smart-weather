@@ -16,7 +16,7 @@ export const CurrentWeatherLoader = () => {
           <p className="localtime">
             <ElementLoader width={100} height={20} />
           </p>
-          <img src="/degrade-border.svg" aria-hidden="true" />
+          <img src="degrade-border.svg" aria-hidden="true" />
         </div>
         <p className="description">
           <ElementLoader width={200} height={60} />

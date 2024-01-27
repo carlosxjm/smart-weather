@@ -29,7 +29,7 @@ export const CurrentWeather = ({ current, location }: CurrentWeatherProps) => {
             {location.name}, {location.country}
           </p>
           <p className="localtime">{localtime}</p>
-          <img src="/degrade-border.svg" aria-hidden="true" />
+          <img src="degrade-border.svg" aria-hidden="true" />
         </div>
         <p className="description">
           {current.condition.text}
@@ -37,15 +37,15 @@ export const CurrentWeather = ({ current, location }: CurrentWeatherProps) => {
         </p>
         <div className="extra-info">
           <div className="extra-info-item">
-            <img src="/images/icons/wind.svg" alt="" />
+            <img src="images/icons/wind.svg" alt="" />
             Wind speed: {current[velocityKey]} {velocityUnit}
           </div>
           <div className="extra-info-item">
-            <img src="/images/icons/drops.svg" alt="" />
+            <img src="images/icons/drops.svg" alt="" />
             Humidity: {current.humidity}%
           </div>
           <div className="extra-info-item">
-            <img src="/images/icons/cloud.svg" alt="" />
+            <img src="images/icons/cloud.svg" alt="" />
             Cloud cover: {current.cloud}%
           </div>
         </div>
