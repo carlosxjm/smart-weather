@@ -7,16 +7,21 @@ import { CurrentWeather } from './components/CurrentWeather/CurrentWeather'
 import { Card } from '../../components/Card/Card'
 import { useCityContext } from '../../contexts/city/useCityContext'
 import { HomeLoader } from './HomeLoader'
+import { ErrorPage } from '../ErrorPage/ErrorPage'
 
 const INTIAL_CITY = 'Paris'
 
 export const Home = () => {
-  const { loadData, data, isLoading } = useWeatherData()
+  const { loadData, data, isLoading, hasError } = useWeatherData()
   const { city } = useCityContext()
 
   useEffect(() => {
     loadData(city?.value || INTIAL_CITY)
   }, [city])
+
+  if (hasError) {
+    return <ErrorPage />
+  }
 
   if (isLoading || !data) {
     return <HomeLoader />
